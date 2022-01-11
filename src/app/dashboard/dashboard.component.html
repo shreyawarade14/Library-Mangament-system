@@ -1,0 +1,36 @@
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <aside id="sidebar">
+            <ul id="sidemenu" class="sidebar-nav">
+                <li>
+                    <a [routerLink]="['/dashboard/plans']">
+                        <span class="sidebar-icon"><i class="fa fa-dashboard"></i></span>
+                        <span class="sidebar-title">Plans</span>
+                    </a>
+                    <a [routerLink]="['/dashboard/books']">
+                        <span class="sidebar-icon"><i class="fa fa-dashboard"></i></span>
+                        <span class="sidebar-title">Books</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="accordion-toggle collapsed toggle-switch" data-toggle="collapse" [routerLink]="['/dashboard/rent-status']" >
+                        <span class="sidebar-icon"><i class="fa fa-users"></i></span>
+                        <span class="sidebar-title">Rent Status</span>
+                        <b class="caret"></b>
+                    </a>
+                </li>
+                <li>
+                    <a class="accordion-toggle collapsed toggle-switch" data-toggle="collapse" [routerLink]="['/dashboard/profile']">
+                        <span class="sidebar-icon"><i class="fa fa-newspaper-o"></i></span>
+                        <span class="sidebar-title">Profile</span>
+                        <b class="caret"></b>
+                    </a>
+                    
+                </li>
+            </ul>
+        </aside>            
+    </div>
+    <main id="page-content-wrapper" role="main">
+        <router-outlet></router-outlet>
+    </main>
+</div> 

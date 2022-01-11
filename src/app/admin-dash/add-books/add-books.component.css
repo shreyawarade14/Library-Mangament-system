@@ -1,0 +1,14 @@
+form{
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+}
+.btn{
+    background-color:#28a745;
+    color: white;
+  }
+  .btn:hover {
+    background-color:#044d15;
+
+  }  
+  

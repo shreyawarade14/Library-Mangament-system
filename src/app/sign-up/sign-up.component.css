@@ -7,6 +7,7 @@ body {
 	min-height: 41px;
 	box-shadow: none;
 	border-color: #e6e6e6;
+	margin-top:15px ;
 }
 .form-control:focus {
 	border-color: #00c1c0;
@@ -42,18 +43,22 @@ body {
 	position: relative;
 	top: 1px;
 }    
-.signup-form .btn, .signup-form .btn:active {        
+.signup-form .button, .signup-form .button:active {        
 	font-size: 16px;
-	font-weight: bold;
-	background: #00c1c0 !important;
+	font-weight: 400;
 	border: none;
-	min-width: 140px;
+	min-width: 200px;
+	min-height: 50px;
+	display: inline-block;
+    line-height: 1.5;
+	background-color: #28a745;
+    border-color: #198754;
 }
-.signup-form .btn:hover, .signup-form .btn:focus {
-	background: #00b3b3 !important;
+.signup-form .button:hover, .signup-form .button:focus {
+	background: #198754 !important;
 }
 .signup-form a {
-	color: #00c1c0;
+	color: #198754;
 	text-decoration: none;
 }	
 .signup-form a:hover {

@@ -1,0 +1,42 @@
+.carousel-item {
+    height: 500px;
+}          
+
+.carousel-item img {
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    width: 100%;
+}
+
+#carouselExampleControls .carousel-item {
+    height: 400px;
+}
+
+#carouselExampleControls img {
+    min-height: 200px !important;
+}
+
+#carouselExampleControls{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    width: 200px;
+    margin: 0 10px;
+    
+}
+
+.btn-info{
+  background-color:#28a745;
+  color: white;
+}
+.btn-info:hover {
+  background-color:#044d15;
+
+}  

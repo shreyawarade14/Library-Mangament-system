@@ -1,0 +1,12 @@
+<div style="height: 396px;">
+  <h2 style="text-align: center">Responsive Pricing Tables</h2>
+  <p style="text-align: center">Resize the browser window to see the effect.</p>
+
+  <div class="columns" *ngFor="let plan of plans">
+    <ul class="price">
+      <li class="header">{{plan.type}}</li>
+      <li class="grey">{{plan.price}}</li>
+      <li class="grey"><a href="#" class="button">Buy</a></li>
+    </ul>
+  </div>
+</div>

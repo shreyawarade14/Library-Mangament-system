@@ -1,0 +1,29 @@
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <aside id="sidebar">
+            <ul id="sidemenu" class="sidebar-nav">
+                <li>
+                    <a [routerLink]="['/admin-dash/add-books']">
+                        <span class="sidebar-icon"><i class="fa fa-dashboard"></i></span>
+                        <span class="sidebar-title">Add-books</span>
+                    </a>
+                    <a [routerLink]="['/admin-dash/add-category']" >
+                        <span class="sidebar-icon"><i class="fa fa-dashboard"></i></span>
+                        <span class="sidebar-title">Add-category</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="accordion-toggle collapsed toggle-switch" data-toggle="collapse" [routerLink]="['/admin-dash/rent-approval']" >
+                        <span class="sidebar-icon"><i class="fa fa-users"></i></span>
+                        <span class="sidebar-title">Rent-Approval</span>
+                        <b class="caret"></b>
+                    </a>
+                </li>    
+            </ul>
+        </aside>            
+    </div>
+    <main id="page-content-wrapper" role="main">
+        <router-outlet></router-outlet>
+    </main>
+</div> 
+

@@ -1,0 +1,17 @@
+<div class="login-form"> 
+    <form [formGroup]="adminForm">  
+		<div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+    	<h4 class="modal-title">Login to Your Account</h4>
+        <div class="form-group">
+            <input type="text" class="form-control"  formControlName="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" formControlName="password" placeholder="Password">
+        </div>
+        <div class="form-group small clearfix">
+            <label class="form-check-label"><input type="checkbox"> Login as Admin</label>
+        </div> 
+        <input type="submit"  class="btn btn-primary btn-block btn-lg" value="Login" (click)="onLoginClick()">              
+    </form>			
+    
+</div>

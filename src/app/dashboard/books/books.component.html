@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="column" *ngFor="let book of books; let i = index">
+      <div class="card">
+        <img src="{{book.img}}" alt="" width="155" height="150">
+        <p style="text-align: left; font-weight: bold;">Book Name:{{book.txt}}</p>
+        <p style="text-align: left; font-weight: bold;">Rent: {{book.rent}} rs/day</p>
+        <div class="container">
+            <a href="#demo_{{i}}" class="btn btn-info" (click)="onRentClick()" data-toggle="modal" data-target="#exampleModalLong">Rent</a>
+            </div>
+          </div>
+      </div>
+    </div>
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Rent Date from </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form   action="/action_page.php">
+          <label for="Date">Start Date:</label>
+          <input type="date" id="startdate" name="startdate" value=""><br>
+          <label for="date">End Date:  </label>
+          <input type="date" id="enddate" name="enddate">
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" onclick="alert('Submitted Succesfully')" routerLink="/Submit" >Submit</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</div>
